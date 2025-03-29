@@ -43,7 +43,7 @@ const Filters = ({
   }
 
   return (
-    <div className="filters flex flex-col gap-y-6 text-gray-500">
+    <div className="filters flex flex-col gap-y-6 text-gray-600">
       <header className="flex justify-between font-bold border-b border-gray-300 py-4">
         <p className=" text-[0.9rem]">
           Filters{" "}
@@ -65,7 +65,7 @@ const Filters = ({
       {/* Subscription Type Section */}
    <div className="subscriptionType flex flex-col gap-y-4">
   <p className="font-bold">Subscription Type</p>
-  <div className="types border rounded-box border-gray-200 flex font-medium">
+  <div className="types border rounded-box border-gray-200 flex font-bold text-gray-400">
     {["Show all", "Free access", "Fee based"].map((option) => (
       <div
         key={option}
@@ -91,8 +91,8 @@ const Filters = ({
         <ul className=" flex flex-col gap-y-2 text-[1rem]">
           {["Any", "Under ₹ 5,000", "Under ₹ 25,000", "Under ₹ 50,000"].map(
             (amount) => (
-              <li key={amount} className="cursor-pointer">
-                <label className="flex gap-x-2 hover:bg-gray-100 items-center">
+              <li key={amount}>
+                <label className="flex gap-x-2 hover:bg-gray-100 items-center cursor-pointer">
                   <input
                     type="radio"
                     name="investmentAmount"
