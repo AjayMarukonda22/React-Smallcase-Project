@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.custom-no-active:active,
+.custom-no-active:focus {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
