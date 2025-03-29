@@ -4,7 +4,7 @@ const Notfound = () => {
   return (
     <div className="flex justify-center items-center gap-x-2 pb-100">
       <img
-        src="./src/images/notfound.svg"
+        src="images/notfound.svg"
         alt="not found"
         className="h-[500px] w-[600px]"
       ></img>
