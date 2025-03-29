@@ -8,9 +8,9 @@ const Filters = ({
   clearAllFilters,
 }) => {
   let volatilityFilters = [
-    { level: "Low", image: "./src/images/low.webp" },
-    { level: "Medium", image: "./src/images/med.png" },
-    { level: "High", image: "./src/images/high.webp" },
+    { level: "Low", image: "images/low.webp" },
+    { level: "Medium", image: "images/med.png" },
+    { level: "High", image: "images/high.webp" },
   ];
 
   const {

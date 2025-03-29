@@ -50,9 +50,9 @@ const Card = ({ smallCaseInfo, selectedSort }) => {
   const minInvestAmount = smallCaseInfo.stats.minInvestAmount;
   let riskLabel = smallCaseInfo.stats.ratios.riskLabel;
   let volatilityImages = {
-    "Low Volatility": "./src/images/low.webp",
-    "Medium Volatility": "./src/images/med.png",
-    "High Volatility": "./src/images/high.webp",
+    "Low Volatility": "images/low.webp",
+    "Medium Volatility": "/images/med.png",
+    "High Volatility": "/images/high.webp",
   };
 
   const volImage = volatilityImages[riskLabel];
