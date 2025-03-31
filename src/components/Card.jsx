@@ -42,7 +42,7 @@ const Card = ({ smallCaseInfo, selectedSort }) => {
   }
 
   const imageLink = `https://assets.smallcase.com/images/smallcases/160/${smallCaseInfo.scid}.png`;
-  const title = smallCaseInfo.info.name.substring(0, 25) + "...";
+  const title = smallCaseInfo.info.name.substring(0, 28) + "...";
   const subscriptionType = smallCaseInfo.flags.private;
   const shortDescription =
     smallCaseInfo.info.shortDescription.substring(0, 60) + "...";
@@ -85,7 +85,7 @@ const Card = ({ smallCaseInfo, selectedSort }) => {
 
         <div className="years">
           <p className="opacity-50">{cagrDuration}</p>
-          <p className="font-bold text-green-500">{cagrPercentage}</p>
+          <p className={`font-bold ${cagrPercentage.charAt(0) === '-' ? 'text-red-500' : 'text-green-500' }`}>{cagrPercentage}</p>
         </div>
 
         <p className="border rounded-xs pr-4 text-[0.9rem] text-gray-600 border-gray-300 flex items-center justify-center">
